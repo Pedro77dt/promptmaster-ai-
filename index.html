@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PromptMaster AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 PromptMaster AI</h1>
+
+        <p>
+            Transforme suas ideias em prompts profissionais.
+        </p>
+    </header>
+
+
+    <main>
+
+        <section class="card">
+
+            <label for="idea">
+                O que você quer criar?
+            </label>
+
+            <textarea
+                id="idea"
+                placeholder="Exemplo: quero criar uma casa futurista na neve..."
+            ></textarea>
+
+
+            <label for="type">
+                Tipo de prompt
+            </label>
+
+            <select id="type">
+
+                <option value="imagem">
+                    🖼️ Imagem
+                </option>
+
+                <option value="video">
+                    🎬 Vídeo
+                </option>
+
+                <option value="chatbot">
+                    💬 Chatbot
+                </option>
+
+                <option value="estudo">
+                    📚 Estudos
+                </option>
+
+                <option value="programacao">
+                    💻 Programação
+                </option>
+
+                <option value="texto">
+                    ✍️ Texto
+                </option>
+
+            </select>
+
+
+            <button onclick="gerarPrompt()">
+                ✨ Gerar Prompt
+            </button>
+
+        </section>
+
+
+        <section class="result">
+
+            <h2>Seu prompt</h2>
+
+            <div id="resultado">
+                Seu prompt aparecerá aqui.
+            </div>
+
+            <button onclick="copiarPrompt()">
+                📋 Copiar Prompt
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
